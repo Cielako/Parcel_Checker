@@ -1,2 +1,2 @@
 # Parcel_Checker
-Projekt aplikacji mobilnej - aplikacja do monitorowania przesyłek poczty polskiej
+Projekt aplikacji 1 mobilnej - aplikacja do monitorowania przesyłek poczty polskiej
