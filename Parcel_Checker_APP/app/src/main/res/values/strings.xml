@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Parcel_Checker_APP</string>
+    <string name="input_query_text_hint">Podaj numer przesyłki</string>
+    <string name="search_button_text">Sprawdź Przesyłkę</string>
+    <string name="nazwa_event_text">Nazwa zdarzenia</string>
+    <string name="nazwa_jednostki_event_text">Nazwa Jednostki</string>
+    <string name="data_event_text">Data</string>
+</resources>
