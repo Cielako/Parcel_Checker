@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dd02f207-4e6d-4136-a2df-87093b716099" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Parcel_Checker_APP/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Parcel_Checker_APP/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parcel_Checker_APP/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Parcel_Checker_APP/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parcel_Checker_APP/app/src/main/java/com/example/parcel_checker_app/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Parcel_Checker_APP/app/src/main/java/com/example/parcel_checker_app/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parcel_Checker_APP/app/src/main/java/com/example/parcel_checker_app/QueryUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Parcel_Checker_APP/app/src/main/java/com/example/parcel_checker_app/QueryUtils.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parcel_Checker_APP/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Parcel_Checker_APP/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="281T9vdGyRiwPXYsvPa8Urmm8Ac" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Parcel_Checker_APP" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dd02f207-4e6d-4136-a2df-87093b716099" name="Default Changelist" comment="" />
+      <created>1650382943833</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1650382943833</updated>
+    </task>
+    <servers />
+  </component>
+</project>
