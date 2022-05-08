@@ -10,8 +10,8 @@ class EventAdapter(private val mEventData:List<ParcelEvent>):
     RecyclerView.Adapter<EventAdapter.EventViewHolder>() {
 
     inner class EventViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)  {
-        val nazwaEventTextView : TextView = itemView.findViewById(R.id.nazwa_TextView)
-        val nazwaJEventTextView : TextView = itemView.findViewById(R.id.nazwaJednostki_textView)
+        val nazwaEventTextView : TextView = itemView.findViewById(R.id.nazwaZdarzenia_TextView)
+        val nazwaJEventTextView : TextView = itemView.findViewById(R.id.nazwaJednostki_TextView)
         val dataTextView: TextView = itemView.findViewById(R.id.data_TextView)
     }
 
@@ -24,7 +24,7 @@ class EventAdapter(private val mEventData:List<ParcelEvent>):
         viewType: Int
     ): EventViewHolder {
         val inflater = LayoutInflater.from(parent.context)
-        return EventViewHolder(inflater.inflate(R.layout.list_item, parent, false))
+        return EventViewHolder(inflater.inflate(R.layout.list_event, parent, false))
     }
 
     /**

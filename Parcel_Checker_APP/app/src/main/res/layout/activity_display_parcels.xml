@@ -6,26 +6,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    tools:context=".MainActivity">
-
-    <EditText
-        android:id="@+id/query_input"
+    tools:context=".DisplayParcelsActivity">
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="text"
-        android:singleLine="true"
-        android:hint="@string/input_query_text_hint"
-        android:text=""/>
-
-    <Button
-        android:id="@+id/search_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/search_button_text" />
+        android:text="@string/statusy_przesylki"
+        android:textAlignment="center"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/black"
+        android:textAllCaps="true"/>
+    <View
+        android:background="@color/purple_700"
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/EventRecyclerView"
+        android:id="@+id/ParcelRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"

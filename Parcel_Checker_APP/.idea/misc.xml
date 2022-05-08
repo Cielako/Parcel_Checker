@@ -4,9 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/OneDrive/Dokumenty/Studia/Semestr 6/PAM/Parcel_Checker/Parcel_Checker_APP/app/src/main/res/layout-v28/activity_main.xml" value="0.2957427536231884" />
-        <entry key="..\:/OneDrive/Dokumenty/Studia/Semestr 6/PAM/Parcel_Checker/Parcel_Checker_APP/app/src/main/res/layout/activity_add_parcel.xml" value="0.18" />
+        <entry key="..\:/OneDrive/Dokumenty/Studia/Semestr 6/PAM/Parcel_Checker/Parcel_Checker_APP/app/src/main/res/layout/activity_add_parcel.xml" value="0.22" />
+        <entry key="..\:/OneDrive/Dokumenty/Studia/Semestr 6/PAM/Parcel_Checker/Parcel_Checker_APP/app/src/main/res/layout/activity_display_parcels.xml" value="0.33152173913043476" />
         <entry key="..\:/OneDrive/Dokumenty/Studia/Semestr 6/PAM/Parcel_Checker/Parcel_Checker_APP/app/src/main/res/layout/activity_main.xml" value="0.2957427536231884" />
+        <entry key="..\:/OneDrive/Dokumenty/Studia/Semestr 6/PAM/Parcel_Checker/Parcel_Checker_APP/app/src/main/res/layout/list_event.xml" value="0.33152173913043476" />
         <entry key="..\:/OneDrive/Dokumenty/Studia/Semestr 6/PAM/Parcel_Checker/Parcel_Checker_APP/app/src/main/res/layout/list_item.xml" value="0.2957427536231884" />
+        <entry key="..\:/OneDrive/Dokumenty/Studia/Semestr 6/PAM/Parcel_Checker/Parcel_Checker_APP/app/src/main/res/layout/list_parcel.xml" value="0.33152173913043476" />
         <entry key="..\:/OneDrive/Dokumenty/Studia/Semestr 6/PAM/Parcel_Checker/Parcel_Checker_APP/app/src/main/res/layout/toolbar.xml" value="0.26268115942028986" />
         <entry key="..\:/OneDrive/Dokumenty/Studia/Semestr 6/PAM/Parcel_Checker/Parcel_Checker_APP/app/src/main/res/menu/toolbar.xml" value="0.36666666666666664" />
       </map>

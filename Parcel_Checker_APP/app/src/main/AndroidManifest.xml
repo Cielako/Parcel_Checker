@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Parcel_Checker_APP">
         <activity
+            android:name=".DisplayParcelsActivity"
+            android:exported="false" />
+        <activity
             android:name=".AddParcelActivity"
             android:exported="false" />
         <activity

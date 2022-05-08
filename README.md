@@ -19,12 +19,12 @@ Projekt aplikacji mobilnej - aplikacja do monitorowania przesyłek poczty polski
 # 4. Lista zadań
    - [x] Nazwa aplikacji
    - [x] Plan przejrzystego layoutu
-   - [ ] Utworzenie bazy przechowującej numery przesyłek
+   - [x] Utworzenie bazy przechowującej numery przesyłek
    - [ ] Aktywność zapisu(dodawania nowych przesyłek)
    - [ ] Aktywność wyświetlania zapisanych przesyłek
    Roboczy layout:
       - [x] Dodawanie numerów przesyłek
-      - [ ] Wyświetlanie numerów przesyłek
+      - [x] Wyświetlanie numerów przesyłek
  
 
 ### Główne funkcje:

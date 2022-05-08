@@ -10,8 +10,6 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
-import android.widget.Button
-import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 
 import kotlinx.android.synthetic.main.activity_main.*
@@ -52,6 +50,10 @@ class MainActivity : AppCompatActivity(), LoaderManager.LoaderCallbacks<List<Par
                 val intent = Intent(this, AddParcelActivity::class.java)
                 startActivity(intent)
             }
+            R.id.displayParcelsButton->{
+                val intent = Intent(this, DisplayParcelsActivity::class.java)
+                startActivity(intent)
+            }
 
         }
         return super.onOptionsItemSelected(item)
@@ -60,11 +62,11 @@ class MainActivity : AppCompatActivity(), LoaderManager.LoaderCallbacks<List<Par
     private fun init() {
 
         // Ustawiamy RecyclerView, żeby miał stały rozmiar i przewijało się go liniowo w dół
-        recyclerView.layoutManager = LinearLayoutManager(this)
-        recyclerView.setHasFixedSize(true)
+        EventRecyclerView.layoutManager = LinearLayoutManager(this)
+        EventRecyclerView.setHasFixedSize(true)
 
         // Ustawiamy adapeter, żeby można było wypełnić listę danymi
-        recyclerView.adapter = EventAdapter(mutableListOf<ParcelEvent>())
+        EventRecyclerView.adapter = EventAdapter(mutableListOf<ParcelEvent>())
 
         // Ustawiamy działanie przycisku żeby odczytywał dane
         search_button.setOnClickListener {
@@ -77,7 +79,7 @@ class MainActivity : AppCompatActivity(), LoaderManager.LoaderCallbacks<List<Par
         loaderManager.restartLoader(LOADER_ID, null, this)
 
         // Chowa obecny widok do momentu wczytania nowych danych
-        recyclerView.visibility = View.INVISIBLE
+        EventRecyclerView.visibility = View.INVISIBLE
     }
 
     override fun onCreateLoader(i: Int, bundle: Bundle?): Loader<List<ParcelEvent>> {
@@ -105,13 +107,13 @@ class MainActivity : AppCompatActivity(), LoaderManager.LoaderCallbacks<List<Par
 
         // Wyświetla RecyclerView, w innym wypadku nie wyświetla nic
         if (data != null) {
-            recyclerView.visibility = View.VISIBLE
-            recyclerView.adapter = EventAdapter(data)
+            EventRecyclerView.visibility = View.VISIBLE
+            EventRecyclerView.adapter = EventAdapter(data)
         }
     }
 
     override fun onLoaderReset(loader: Loader<List<ParcelEvent>>) {
         // Usuwa obecne dane, ponieważ loader został zresetowany
-        recyclerView.adapter = EventAdapter(mutableListOf<ParcelEvent>())
+        EventRecyclerView.adapter = EventAdapter(mutableListOf<ParcelEvent>())
     }
 }
