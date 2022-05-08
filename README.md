@@ -22,7 +22,7 @@ Projekt aplikacji mobilnej - aplikacja do monitorowania przesyłek poczty polski
    - [x] Utworzenie bazy przechowującej numery przesyłek
    - [ ] Aktywność zapisu(dodawania nowych przesyłek)
    - [ ] Aktywność wyświetlania zapisanych przesyłek
-   Roboczy layout:
+   - Roboczy layout:
       - [x] Dodawanie numerów przesyłek
       - [x] Wyświetlanie numerów przesyłek
  
