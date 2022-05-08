@@ -5,4 +5,9 @@
     <string name="nazwa_event_text">Nazwa zdarzenia</string>
     <string name="nazwa_jednostki_event_text">Nazwa Jednostki</string>
     <string name="data_event_text">Data</string>
+    <string name="parcel_name_AddTextView">Nazwa </string>
+    <string name="parcel_name_hint">Wpisz nazwę przesyłki</string>
+    <string name="parcel_num_AddTextView">Numer</string>
+    <string name="parcel_num_hint">Wpisz numer przesyłki</string>
+    <string name="add_parcel_button">Dodaj Przesyłkę</string>
 </resources>

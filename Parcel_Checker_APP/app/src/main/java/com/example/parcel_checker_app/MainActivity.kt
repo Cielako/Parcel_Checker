@@ -2,11 +2,16 @@ package com.example.parcel_checker_app
 
 import android.app.LoaderManager
 import android.content.AsyncTaskLoader
+import android.content.Intent
 
 import android.content.Loader
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
+import android.widget.Button
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 
 import kotlinx.android.synthetic.main.activity_main.*
@@ -29,13 +34,31 @@ class MainActivity : AppCompatActivity(), LoaderManager.LoaderCallbacks<List<Par
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         setContentView(R.layout.activity_main)
         // Runs UI initializations/
         init()
+
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.toolbar,menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+
+        when (item.itemId) {
+            R.id.addParcelButton->{
+                val intent = Intent(this, AddParcelActivity::class.java)
+                startActivity(intent)
+            }
+
+        }
+        return super.onOptionsItemSelected(item)
     }
 
     private fun init() {
+
         // Ustawiamy RecyclerView, żeby miał stały rozmiar i przewijało się go liniowo w dół
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.setHasFixedSize(true)
@@ -47,7 +70,6 @@ class MainActivity : AppCompatActivity(), LoaderManager.LoaderCallbacks<List<Par
         search_button.setOnClickListener {
             readParcelEvents()
         }
-
     }
 
     private fun readParcelEvents() {
