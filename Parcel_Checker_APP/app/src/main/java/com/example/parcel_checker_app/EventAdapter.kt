@@ -19,12 +19,14 @@ class EventAdapter(private val mEventData:List<ParcelEvent>):
      *  Rozwija układ elementów listy.
      */
 
-    override fun onCreateViewHolder(
-        parent: ViewGroup,
-        viewType: Int
-    ): EventViewHolder {
+    override fun onCreateViewHolder( parent: ViewGroup, viewType: Int): EventViewHolder {
         val inflater = LayoutInflater.from(parent.context)
-        return EventViewHolder(inflater.inflate(R.layout.list_event, parent, false))
+        return EventViewHolder(inflater.inflate(
+                R.layout.list_event,
+                parent,
+                false
+            )
+        )
     }
 
     /**
