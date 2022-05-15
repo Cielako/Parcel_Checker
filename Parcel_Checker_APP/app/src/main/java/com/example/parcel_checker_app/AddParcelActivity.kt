@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_add_parcel.*
+import kotlinx.android.synthetic.main.activity_main.*
 
 class AddParcelActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,16 +20,39 @@ class AddParcelActivity : AppCompatActivity() {
     private fun addRecord() {
         val name = parcelName_Add.text.toString()
         val number = parcelNum_Add.text.toString()
+        var last_event: String = "";
         val databaseHandler = DBHandler(this)
-        if (!name.isEmpty() && !number.isEmpty()) {
-            val insertStatus =
-                databaseHandler.addParcel(ParcelModelClass(0, name, number, "test"))
-            if (insertStatus > -1) {
-                Toast.makeText(applicationContext, "pomyślnie dodano przesyłkę", Toast.LENGTH_LONG).show()
-                parcelName_Add.text.clear()
-                parcelNum_Add.text.clear()
-                this.finish()
+        println("${Thread.currentThread()} has run.")
+
+        val newParcelThread = Thread(
+            Runnable {
+                val eventsList: List<ParcelEvent>? = QueryUtils.requestEventData(parcelNum_Add.text.toString())
+                if(eventsList != null){
+                    last_event = eventsList[0].czas.toString() + " | " + eventsList[0].nazwa.toString()
+                    val insertStatus = databaseHandler.addParcel(ParcelModelClass(0, name, number, last_event))
+                    if (insertStatus > -1) {
+                        runOnUiThread(Runnable {
+                            Toast.makeText(this, "Pomyślnie dodano przesyłkę", Toast.LENGTH_SHORT).show()
+                        })
+                        parcelName_Add.text.clear()
+                        parcelNum_Add.text.clear()
+                        println("Pomyślnie dodano przesyłkę")
+                    }
+                    this.finish()
+                    Thread.sleep(5000)
+
+                }
+                else{
+                    runOnUiThread(Runnable {
+                        Toast.makeText(this, "Błędny numer przesyłki", Toast.LENGTH_LONG).show()
+                    })
+                }
             }
+        )
+
+        if (!name.isEmpty() && !number.isEmpty()) {
+            newParcelThread.start()
+            println("Thread id:${newParcelThread.id} | IsAlive: ${newParcelThread.isAlive}")
         } else {
             Toast.makeText(
                 applicationContext,

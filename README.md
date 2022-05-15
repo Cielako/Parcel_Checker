@@ -20,7 +20,7 @@ Projekt aplikacji mobilnej - aplikacja do monitorowania przesyłek poczty polski
    - [x] Nazwa aplikacji
    - [x] Plan przejrzystego layoutu
    - [x] Utworzenie bazy przechowującej numery przesyłek
-   - [ ] Aktywność zapisu(dodawania nowych przesyłek) - do korekty (12.05.22)
+   - [x] Aktywność zapisu(dodawania nowych przesyłek) - do korekty (12.05.22) / Poprawiono (15.05.22)
    - [x] Usuwanie przesyłek - okno dialogowe (12.05.22)
    - [x] Aktywność wyświetlania zapisanych przesyłek (12.05.22)
    - [ ] Aktywność statusów danej przesyłki
@@ -32,7 +32,7 @@ Projekt aplikacji mobilnej - aplikacja do monitorowania przesyłek poczty polski
 
 ### Główne funkcje:
   - [x] Wyświetlanie trasy przesyłki po wpisaniu numeru przesyłki (19.04.22)
-  - [ ] Zapis / Edycja (nazw) / Usuwanie numerów przesyłek
+  - [x] Zapis / Edycja (nazw) / Usuwanie numerów przesyłek
   - [x] Lista wszystkich zapisanych przesyłek
 
 
