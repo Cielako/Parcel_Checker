@@ -66,6 +66,7 @@
         android:gravity="center_horizontal"
         android:layout_marginTop="10dp">
         <ImageView
+            android:id="@+id/displayRoute_ImageView"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginEnd="10dp"
@@ -93,7 +94,7 @@
             android:src="@drawable/ic_baseline_delete_forever_24" />
     </LinearLayout>
     <View
-        android:background="@color/purple_700"
+        android:background="@color/red_700"
         android:layout_width="match_parent"
         android:layout_height="2dp" />
 </LinearLayout>

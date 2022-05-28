@@ -93,6 +93,7 @@ class DBHandler(context: Context):SQLiteOpenHelper(context,DATABASE_NAME, null, 
         val db = this.writableDatabase
         val contentValues = ContentValues()
         contentValues.put(KEY_NAME, par.p_name)
+        contentValues.put(KEY_STATUS, par.p_status)
 
         val succes = db.update(TABLE_PARCELS, contentValues, KEY_ID + "=" + par.p_id, null)
         db.close()

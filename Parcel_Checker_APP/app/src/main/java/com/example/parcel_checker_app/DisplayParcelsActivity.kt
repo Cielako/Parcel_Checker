@@ -18,6 +18,10 @@ class DisplayParcelsActivity : AppCompatActivity() {
         loadParcels()
     }
 
+    override fun onResume() {
+        super.onResume()
+        loadParcels()
+    }
     /**
      * Funkcja odpowiada za ładowanie przesyłek do RecyclerView
      */
